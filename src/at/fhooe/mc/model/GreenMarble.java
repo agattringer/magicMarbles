@@ -11,8 +11,4 @@ public class GreenMarble extends Marble {
         super();
         setBackground(Color.GREEN);
     }
-
-    public GreenMarble(Point position) {
-        super(position);
-    }
 }

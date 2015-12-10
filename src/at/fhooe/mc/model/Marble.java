@@ -5,13 +5,11 @@ import javafx.beans.Observable;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Created by alexandergattringer on 08/12/15.
  */
-public abstract class Marble extends JButton implements ActionListener{
+public abstract class Marble extends JButton{
     public static final int DIMENSION = 50;
 
     private Point mPosition;
@@ -22,12 +20,7 @@ public abstract class Marble extends JButton implements ActionListener{
         setSize(DIMENSION, DIMENSION);
         mBorder = new LineBorder(Color.white);
         setOpaque(true);
-        addActionListener(this);
-    }
-
-    public Marble(Point position){
-        this();
-        mPosition = position;
+        setBorderPainted(false);
     }
 
     public void setPosition(Point position){
@@ -38,10 +31,10 @@ public abstract class Marble extends JButton implements ActionListener{
         return mPosition;
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
+    public void selected(){
         if (!mIsEnabled){
             setBorder(mBorder);
+            setBorderPainted(true);
             mIsEnabled = true;
             return;
         }

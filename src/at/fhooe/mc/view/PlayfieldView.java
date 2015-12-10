@@ -18,8 +18,8 @@ public class PlayfieldView extends JPanel {
     }
 
     public void adjustViewToMarbleCount(int width, int height){
-        setPreferredSize(new Dimension(width * Marble.DIMENSION, height * Marble.DIMENSION));
-        setLayout(new GridLayout(height, width));
+        setPreferredSize(new Dimension(height * Marble.DIMENSION, width * Marble.DIMENSION));
+        setLayout(new GridLayout(width, height));
     }
 
     public void insertMarble(Marble marble){

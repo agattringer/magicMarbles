@@ -4,6 +4,7 @@ import at.fhooe.mc.model.MMModel;
 import at.fhooe.mc.model.Marble;
 import at.fhooe.mc.view.MMView;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -31,6 +32,8 @@ public class MMController implements ActionListener{
     public void setupPlayfield(int width, int height){
         Marble[][] playfield = MMModel.getInstance().createPlayfieldArray(width, height);
         playfield = fillPlayfield(playfield);
+        MMModel.getInstance().setPlayfieldArray(playfield);
+        MMView.getInstance().adjustView(width, height);
     }
 
     private Marble[][] fillPlayfield(Marble[][] playfield){
@@ -38,6 +41,7 @@ public class MMController implements ActionListener{
         for (int i = 0; i < playfield.length; i++){
             for (int j = 0; j < playfield[i].length; j++){
                 Marble marble = marbleFactory.getRandomMarble();
+                marble.setPosition(new Point(i, j));
                 playfield[i][j] = marble;
                 marble.addActionListener(this);
                 //insert marble to view
@@ -50,5 +54,8 @@ public class MMController implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         //TODO: marble has been selected
+        Marble clickedMarble = (Marble)e.getSource();
+        clickedMarble.selected();
+        System.out.println("X: " + clickedMarble.getPosition().x + " Y: " + clickedMarble.getPosition().y);
     }
 }

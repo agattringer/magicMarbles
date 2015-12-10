@@ -62,6 +62,7 @@ public class MMView extends JFrame{
 
     public void adjustView(int width, int height){
         mPlayfieldView.adjustViewToMarbleCount(width, height);
+        pack();
     }
 
     public void insertMarbleToPlayfield(Marble marble){
