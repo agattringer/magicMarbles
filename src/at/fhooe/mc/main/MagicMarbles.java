@@ -12,11 +12,6 @@ public class MagicMarbles {
 
     public static void main(String[] args){
         MMView frame = MMView.getInstance();
-
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(400, 300));
-        frame.pack();
-
         frame.setVisible(true);
     }
 }

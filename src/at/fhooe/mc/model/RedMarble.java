@@ -9,10 +9,10 @@ public class RedMarble extends Marble{
 
     public RedMarble(){
         super();
+        setBackground(Color.RED);
     }
 
     public RedMarble(Point position) {
         super(position);
-        setBackground(Color.RED);
     }
 }

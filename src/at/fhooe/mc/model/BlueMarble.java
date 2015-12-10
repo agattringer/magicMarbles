@@ -9,10 +9,10 @@ public class BlueMarble extends Marble {
 
     public BlueMarble(){
         super();
+        setBackground(Color.BLUE);
     }
 
     public BlueMarble(Point position) {
         super(position);
-        setBackground(Color.BLUE);
     }
 }
