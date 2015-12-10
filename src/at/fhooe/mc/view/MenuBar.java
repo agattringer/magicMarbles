@@ -35,17 +35,12 @@ public class MenuBar extends JMenuBar implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource().equals(mNewMenuItem)) {
-            SetupDialog setupDialog = new SetupDialog();
-            setupDialog.setVisible(true);
+            MMView.getInstance().showSetupDialog();
             return;
         }
 
         if (e.getSource().equals(mExitMenuItem)) {
-            //TODO: this is to test only
-            MMController.getInstance().setupPlayfield(3, 6);
-            updateUI();
-            //close
-            //dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+            MMView.getInstance().closeWindow();
         }
     }
 

@@ -7,8 +7,9 @@ import java.awt.*;
  */
 public class RedMarble extends Marble{
 
-    public RedMarble(){
+    public RedMarble() {
         super();
         setBackground(Color.RED);
+        setMarbleType(MarbleType.RedMarble);
     }
 }

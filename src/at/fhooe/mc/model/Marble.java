@@ -12,15 +12,28 @@ import java.awt.*;
 public abstract class Marble extends JButton{
     public static final int DIMENSION = 50;
 
+    public enum MarbleType {
+        BlueMarble, RedMarble, GreenMarble
+    }
+
     private Point mPosition;
     private LineBorder mBorder;
     private boolean mIsEnabled;
+    private MarbleType mMarbleType;
 
     public Marble(){
         setSize(DIMENSION, DIMENSION);
         mBorder = new LineBorder(Color.white);
         setOpaque(true);
         setBorderPainted(false);
+    }
+
+    public MarbleType getMarbleType(){
+        return mMarbleType;
+    }
+
+    public void setMarbleType(MarbleType type){
+        mMarbleType = type;
     }
 
     public void setPosition(Point position){
@@ -31,15 +44,20 @@ public abstract class Marble extends JButton{
         return mPosition;
     }
 
-    public void selected(){
-        if (!mIsEnabled){
-            setBorder(mBorder);
-            setBorderPainted(true);
-            mIsEnabled = true;
-            return;
-        }
-        //no border on disable
+    public void select(){
+        setBorder(mBorder);
+        setBorderPainted(true);
+        mIsEnabled = true;
+        return;
+
+    }
+
+    public void deselect(){
         setBorder(null);
         mIsEnabled = false;
+    }
+
+    public void remove(){
+        setVisible(false);
     }
 }

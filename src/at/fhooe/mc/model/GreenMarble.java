@@ -10,5 +10,6 @@ public class GreenMarble extends Marble {
     public GreenMarble(){
         super();
         setBackground(Color.GREEN);
+        setMarbleType(MarbleType.GreenMarble);
     }
 }

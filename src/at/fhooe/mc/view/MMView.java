@@ -1,6 +1,7 @@
 package at.fhooe.mc.view;
 
 import at.fhooe.mc.model.Marble;
+import javafx.geometry.Pos;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,17 +19,19 @@ public class MMView extends JFrame{
         return ourInstance;
     }
 
-    PlayfieldView mPlayfieldView;
-    ScoreView mScoreView;
+    private PlayfieldView mPlayfieldView;
+    private ScoreView mScoreView;
 
     private MMView(){
         super("Magic Marbles");
         //setup frame itself
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //setPreferredSize(new Dimension(400, 300));
         setLayout(new BorderLayout());
-
         setup();
+
+        //set frame to center
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
     }
 
     private void setup(){
@@ -38,6 +41,9 @@ public class MMView extends JFrame{
         createScoreView();
 
         pack();
+
+        //ask user first
+        showSetupDialog();
     }
 
     private void createMenuBar(){
@@ -65,10 +71,32 @@ public class MMView extends JFrame{
         pack();
     }
 
+    public void resetView(){
+        mPlayfieldView.reset();
+    }
+
     public void insertMarbleToPlayfield(Marble marble){
         mPlayfieldView.insertMarble(marble);
     }
 
+    public void closeWindow(){
+        dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+    }
 
+    public void showSetupDialog(){
+        SetupDialog setupDialog = new SetupDialog();
+        //set to center of window
+        setupDialog.setLocationRelativeTo(this);
+        setupDialog.setVisible(true);
+
+        //bring dialog to front
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                setupDialog.toFront();
+                setupDialog.repaint();
+            }
+        });
+    }
 
 }

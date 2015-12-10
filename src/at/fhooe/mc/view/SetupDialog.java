@@ -1,5 +1,7 @@
 package at.fhooe.mc.view;
 
+import at.fhooe.mc.controller.MMController;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -47,12 +49,32 @@ public class SetupDialog extends JDialog implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource().equals(mOkButton)){
-            //TODO: read input, setup playfield
+            if (isValidInput(mWidthField.getText()) && isValidInput(mHeightField.getText())){
+                setupGame(Integer.valueOf(mWidthField.getText()), Integer.valueOf(mHeightField.getText()));
+                dispose();
+            }else{
+                //show user input error
+                JOptionPane.showMessageDialog(this,
+                        "Input has to be between 3 and 10",
+                        "Wrong input",
+                        JOptionPane.ERROR_MESSAGE);
+            }
+
             return;
         }
 
         if (e.getSource().equals(mCancelButton)){
             dispose();
         }
+    }
+
+    private boolean isValidInput(String input){
+        String regex = "^[3-9]{1}$|^10{1}$";
+
+        return input.matches(regex);
+    }
+
+    private void setupGame(int width, int height){
+        MMController.getInstance().setupPlayfield(width, height);
     }
 }
