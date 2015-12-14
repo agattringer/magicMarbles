@@ -10,9 +10,6 @@ import java.awt.*;
  */
 public class PlayfieldView extends JPanel {
 
-    private int mWidth;
-    private int mHeight;
-
     public PlayfieldView(){
         super();
         setBackground(Color.black);
@@ -23,8 +20,6 @@ public class PlayfieldView extends JPanel {
     public void adjustViewToMarbleCount(int width, int height){
         setPreferredSize(new Dimension(height * Marble.DIMENSION, width * Marble.DIMENSION));
         setLayout(new GridLayout(width, height));
-        mWidth = width;
-        mHeight = height;
     }
 
     public void insertMarble(Marble marble){

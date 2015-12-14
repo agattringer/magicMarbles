@@ -75,6 +75,10 @@ public class MMView extends JFrame{
         mPlayfieldView.reset();
     }
 
+    public void resetScore(){
+        mScoreView.updateScore(0);
+    }
+
     public void insertMarbleToPlayfield(Marble marble){
         mPlayfieldView.insertMarble(marble);
     }

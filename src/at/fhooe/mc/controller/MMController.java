@@ -31,6 +31,7 @@ public class MMController implements ActionListener{
 
     public void setupPlayfield(int width, int height){
         MMView.getInstance().resetView();
+        MMView.getInstance().resetScore();
         Marble[][] playfield = MMModel.getInstance().createPlayfieldArray(width, height);
         playfield = fillPlayfield(playfield);
         MMModel.getInstance().setPlayfieldArray(playfield);
@@ -52,17 +53,47 @@ public class MMController implements ActionListener{
         return playfield;
     }
 
-    private void removeMarble(Marble marble){
-        MMModel.getInstance().removeMarbleAt(marble.getPosition());
-        marble.remove();
+    private void removeSelectedMarbles(){
+        if (mSelectedMarbles.size() > 1){//only remove clusters
+            for (Marble marble : mSelectedMarbles){
+                marble.remove();
+            }
+
+            incrementScore(mSelectedMarbles.size());
+
+            if (isGameFinished()){
+                MMView.getInstance().showSetupDialog();
+            }else {
+                MMModel.getInstance().rearrangeMarbles();
+                adjustViewToArray(MMModel.getInstance().getPlayfieldArray());
+            }
+        }
+
     }
 
-    private void removeSelectedMarbles(){
-        for (Marble marble : mSelectedMarbles){
-            removeMarble(marble);
+    private boolean isGameFinished(){
+        ArrayList<Marble> remainingMarbles = MMModel.getInstance().getRemainingMarbles();
+
+        for (Marble marble : remainingMarbles){
+            mValidMarbles.clear();
+            addToMarbleCluster(marble);
+            if (mValidMarbles.size() > 1)
+                return false;
         }
-        incrementScore(mSelectedMarbles.size());
-        MMModel.getInstance().rearrangeMarbles();
+
+        return true;
+    }
+
+    private void adjustViewToArray(Marble[][] marbleArray){
+        MMView.getInstance().resetView();
+
+        for (int i = 0; i < marbleArray.length; i++) {
+            for (int j = 0; j < marbleArray[i].length; j++) {
+                Marble marble = marbleArray[i][j];
+                marble.setPosition(new Point(i,j));
+                MMView.getInstance().insertMarbleToPlayfield(marble);
+            }
+        }
     }
 
     private void checkSelection(Marble marble){
@@ -124,7 +155,6 @@ public class MMController implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         Marble clickedMarble = (Marble)e.getSource();
-        //System.out.println("X: " + clickedMarble.getPosition().x + " Y: " + clickedMarble.getPosition().y);
         checkSelection(clickedMarble);
     }
 }
