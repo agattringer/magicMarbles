@@ -27,6 +27,7 @@ public class MMController implements ActionListener{
     private Marble.MarbleType mCurrentSelectionType;
 
     private MMController() {
+
     }
 
     public void setupPlayfield(int width, int height){
@@ -61,14 +62,14 @@ public class MMController implements ActionListener{
 
             incrementScore(mSelectedMarbles.size());
 
+
+            MMModel.getInstance().rearrangeMarbles();
+            adjustViewToArray(MMModel.getInstance().getPlayfieldArray());
+
             if (isGameFinished()){
                 MMView.getInstance().showSetupDialog();
-            }else {
-                MMModel.getInstance().rearrangeMarbles();
-                adjustViewToArray(MMModel.getInstance().getPlayfieldArray());
             }
         }
-
     }
 
     private boolean isGameFinished(){
@@ -156,5 +157,6 @@ public class MMController implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         Marble clickedMarble = (Marble)e.getSource();
         checkSelection(clickedMarble);
+        System.out.println("x: " + clickedMarble.getPosition().x + " y: "+ clickedMarble.getPosition().y);
     }
 }

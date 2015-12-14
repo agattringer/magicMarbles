@@ -48,25 +48,25 @@ public class MMModel {
         return remainingMarbles;
     }
 
-    public Marble getMarbleForPosition(Point position){
-        return mPlayfield[position.x][position.y];
-    }
-
     public void rearrangeMarbles(){
 
-        for (int i = 0; i < mWidth; i++){
-            for (int j = 0; j < mHeight; j++){
+        for (int i = 0; i < mHeight; i++){
+            for (int j = 0; j < mWidth; j++){
                 dropMarblesToBotton(i);
             }
         }
 
-        moveMarblesToRight();
-        //TODO: after rearranging check for end of game
+        for (int i = mHeight - 1; i > 0; i--){
+            for (int j = 0; j < mHeight; j++){
+                moveMarblesToRight(i);
+            }
+        }
+
     }
 
     private void dropMarblesToBotton(int column){
 
-        for (int i = mHeight - 1; i > 0; i--){
+        for (int i = mWidth - 1; i > 0; i--){
             Marble tempMarble = mPlayfield[i][column];
 
             if (!tempMarble.isVisible()){
@@ -76,8 +76,15 @@ public class MMModel {
         }
     }
 
-    private void moveMarblesToRight(){
-
+    private void moveMarblesToRight(int column){
+        if (!mPlayfield[mWidth-1][column].isVisible()){
+            //move whole column to right
+            for (int i = 0; i < mWidth; i++){
+                Marble tempMarble = mPlayfield[i][column];
+                mPlayfield[i][column] = mPlayfield[i][column-1];
+                mPlayfield[i][column-1] = tempMarble;
+            }
+        }
     }
 
     public ArrayList<Marble> getNeighboursForMarble(Marble marble){

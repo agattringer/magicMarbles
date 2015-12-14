@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef762c89-dcf3-4c7f-9ae6-a6307129bbbb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/controller/MMController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/view/MMView$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/view/MMView.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/controller/MMController.class" afterPath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/controller/MMController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/model/MMModel.class" afterPath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/model/MMModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/view/PlayfieldView.class" afterPath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/view/PlayfieldView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/view/SetupDialog.class" afterPath="$PROJECT_DIR$/out/production/MagicMarbles/at/fhooe/mc/view/SetupDialog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java" afterPath="$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java" afterPath="$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java" afterPath="$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java" afterPath="$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java" />
     </list>
     <ignored path="MagicMarbles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,60 +34,12 @@
         <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+              <caret line="69" column="46" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1846#1847#0" expanded="true" />
-                <element signature="e#1884#1885#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
                 <element signature="e#1956#1957#0" expanded="true" />
-                <element signature="e#2013#2014#0" expanded="true" />
-                <element signature="e#2064#2065#0" expanded="true" />
                 <element signature="method#showSetupDialog#0;class#MMView#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayfieldView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MMModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#1282#1283#0" expanded="true" />
-                <element signature="e#1339#1340#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MMController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64801866">
-              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#fillPlayfield#0;class#MMController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,6 +53,51 @@
               <folding>
                 <element signature="e#2077#2078#0" expanded="true" />
                 <element signature="e#2149#2150#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayfieldView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MMModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MMController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#adjustViewToArray#0;class#MMController#0" expanded="false" />
+                <element signature="method#checkSelection#0;class#MMController#0" expanded="false" />
+                <element signature="method#checkForRemoval#0;class#MMController#0" expanded="false" />
+                <element signature="method#incrementScore#0;class#MMController#0" expanded="false" />
+                <element signature="method#addToMarbleCluster#0;class#MMController#0" expanded="false" />
+                <element signature="method#selectMarble#0;class#MMController#0" expanded="false" />
+                <element signature="method#clearSelection#0;class#MMController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -135,15 +129,15 @@
         <option value="$PROJECT_DIR$/src/at/fhooe/mc/main/MagicMarbles.java" />
         <option value="$PROJECT_DIR$/src/at/fhooe/mc/view/ScoreView.java" />
         <option value="$PROJECT_DIR$/src/at/fhooe/mc/model/BlueMarble.java" />
-        <option value="$PROJECT_DIR$/src/at/fhooe/mc/model/RedMarble.java" />
         <option value="$PROJECT_DIR$/src/at/fhooe/mc/model/GreenMarble.java" />
-        <option value="$PROJECT_DIR$/src/at/fhooe/mc/model/Marble.java" />
-        <option value="$PROJECT_DIR$/src/at/fhooe/mc/view/SetupDialog.java" />
         <option value="$PROJECT_DIR$/src/at/fhooe/mc/view/MenuBar.java" />
+        <option value="$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java" />
+        <option value="$PROJECT_DIR$/src/at/fhooe/mc/model/Marble.java" />
+        <option value="$PROJECT_DIR$/src/at/fhooe/mc/model/RedMarble.java" />
+        <option value="$PROJECT_DIR$/src/at/fhooe/mc/view/SetupDialog.java" />
+        <option value="$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java" />
         <option value="$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java" />
         <option value="$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java" />
-        <option value="$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java" />
-        <option value="$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java" />
       </list>
     </option>
   </component>
@@ -184,6 +178,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,9 +289,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -640,7 +634,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -652,15 +646,24 @@
     <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
             <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
             <element signature="method#showSetupDialog#0;class#MMView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,21 +671,7 @@
     <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/MenuBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -695,7 +684,65 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#fillPlayfield#0;class#MMController#0" expanded="false" />
+            <element signature="method#adjustViewToArray#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkSelection#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkForRemoval#0;class#MMController#0" expanded="false" />
+            <element signature="method#incrementScore#0;class#MMController#0" expanded="false" />
+            <element signature="method#addToMarbleCluster#0;class#MMController#0" expanded="false" />
+            <element signature="method#selectMarble#0;class#MMController#0" expanded="false" />
+            <element signature="method#clearSelection#0;class#MMController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="method#showSetupDialog#0;class#MMView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#adjustViewToArray#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkSelection#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkForRemoval#0;class#MMController#0" expanded="false" />
+            <element signature="method#incrementScore#0;class#MMController#0" expanded="false" />
+            <element signature="method#addToMarbleCluster#0;class#MMController#0" expanded="false" />
+            <element signature="method#selectMarble#0;class#MMController#0" expanded="false" />
+            <element signature="method#clearSelection#0;class#MMController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,11 +753,8 @@
           <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
             <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
             <element signature="method#showSetupDialog#0;class#MMView#0" expanded="false" />
           </folding>
         </state>
@@ -722,10 +766,6 @@
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -746,7 +786,63 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#fillPlayfield#0;class#MMController#0" expanded="false" />
+            <element signature="method#adjustViewToArray#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkSelection#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkForRemoval#0;class#MMController#0" expanded="false" />
+            <element signature="method#incrementScore#0;class#MMController#0" expanded="false" />
+            <element signature="method#addToMarbleCluster#0;class#MMController#0" expanded="false" />
+            <element signature="method#selectMarble#0;class#MMController#0" expanded="false" />
+            <element signature="method#clearSelection#0;class#MMController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="method#showSetupDialog#0;class#MMView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/MenuBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#adjustViewToArray#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkSelection#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkForRemoval#0;class#MMController#0" expanded="false" />
+            <element signature="method#incrementScore#0;class#MMController#0" expanded="false" />
+            <element signature="method#addToMarbleCluster#0;class#MMController#0" expanded="false" />
+            <element signature="method#selectMarble#0;class#MMController#0" expanded="false" />
+            <element signature="method#clearSelection#0;class#MMController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -755,9 +851,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,11 +861,8 @@
           <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
             <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
             <element signature="method#showSetupDialog#0;class#MMView#0" expanded="false" />
           </folding>
         </state>
@@ -783,8 +874,8 @@
           <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -795,10 +886,6 @@
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -809,7 +896,13 @@
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#fillPlayfield#0;class#MMController#0" expanded="false" />
+            <element signature="method#adjustViewToArray#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkSelection#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkForRemoval#0;class#MMController#0" expanded="false" />
+            <element signature="method#incrementScore#0;class#MMController#0" expanded="false" />
+            <element signature="method#addToMarbleCluster#0;class#MMController#0" expanded="false" />
+            <element signature="method#selectMarble#0;class#MMController#0" expanded="false" />
+            <element signature="method#clearSelection#0;class#MMController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -828,9 +921,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -840,11 +931,8 @@
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
             <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
             <element signature="method#showSetupDialog#0;class#MMView#0" expanded="false" />
           </folding>
         </state>
@@ -855,7 +943,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="38" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -866,10 +954,6 @@
           <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,7 +1002,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -952,14 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/RedMarble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/GreenMarble.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41958043">
@@ -989,18 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/Marble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7202797">
-          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/controller/MarbleFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1019,16 +1083,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java">
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/RedMarble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.10489511">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/Marble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6853147">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1036,29 +1106,41 @@
     <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/MMView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <caret line="69" column="46" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
             <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
             <element signature="method#showSetupDialog#0;class#MMView#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java">
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="method#adjustViewToArray#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkSelection#0;class#MMController#0" expanded="false" />
+            <element signature="method#checkForRemoval#0;class#MMController#0" expanded="false" />
+            <element signature="method#incrementScore#0;class#MMController#0" expanded="false" />
+            <element signature="method#addToMarbleCluster#0;class#MMController#0" expanded="false" />
+            <element signature="method#selectMarble#0;class#MMController#0" expanded="false" />
+            <element signature="method#clearSelection#0;class#MMController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/view/PlayfieldView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1074,13 +1156,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/controller/MMController.java">
+    <entry file="file://$PROJECT_DIR$/src/at/fhooe/mc/model/MMModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64801866">
-          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#fillPlayfield#0;class#MMController#0" expanded="false" />
           </folding>
         </state>
       </provider>
