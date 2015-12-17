@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MagicMarbles:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MagicMarbles_jar</output-path>
+    <root id="archive" name="MagicMarbles.jar">
+      <element id="module-output" name="MagicMarbles" />
+    </root>
+  </artifact>
+</component>
