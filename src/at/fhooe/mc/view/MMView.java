@@ -103,4 +103,11 @@ public class MMView extends JFrame{
         });
     }
 
+    public void showWinDialog(int finalScore){
+        JOptionPane.showMessageDialog(this,
+                "Your final score is: " + finalScore + " points");
+
+        showSetupDialog();
+    }
+
 }

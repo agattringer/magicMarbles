@@ -67,8 +67,9 @@ public class MMController implements ActionListener{
             adjustViewToArray(MMModel.getInstance().getPlayfieldArray());
 
             if (isGameFinished()){
-                MMView.getInstance().showSetupDialog();
+                MMView.getInstance().showWinDialog(mScore);
             }
+            clearSelection();
         }
     }
 
@@ -81,7 +82,9 @@ public class MMController implements ActionListener{
             if (mValidMarbles.size() > 1)
                 return false;
         }
-
+        //adjust score to remaining marbles
+        mScore += remainingMarbles.size();
+        MMView.getInstance().updateScore(mScore);
         return true;
     }
 
@@ -99,25 +102,16 @@ public class MMController implements ActionListener{
 
     private void checkSelection(Marble marble){
 
-        if (!mValidMarbles.contains(marble)){//marble not in cluster
-            clearSelection();
-        }
-
         if (mCurrentSelectionType != marble.getMarbleType()){//other marble type
             clearSelection();
         }
-
-        selectMarble(marble);
         //recursive call for identifying the cluster in which the marble is located
         addToMarbleCluster(marble);
-        checkForRemoval();
-    }
 
-    private void checkForRemoval(){
-        if (mSelectedMarbles.containsAll(mValidMarbles)){
-            removeSelectedMarbles();
-            clearSelection();
+        for (Marble curMarb : mValidMarbles){
+            selectMarble(curMarb);
         }
+        removeSelectedMarbles();
     }
 
     private void incrementScore(int removedMarbles){

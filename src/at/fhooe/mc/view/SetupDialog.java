@@ -35,8 +35,8 @@ public class SetupDialog extends JDialog implements ActionListener{
         mOkButton.addActionListener(this);
         mCancelButton.addActionListener(this);
 
-        panel.add(new JLabel("Width"));
         panel.add(new JLabel("Height"));
+        panel.add(new JLabel("Width"));
 
         panel.add(mWidthField);
         panel.add(mHeightField);

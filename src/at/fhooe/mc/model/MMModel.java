@@ -1,7 +1,5 @@
 package at.fhooe.mc.model;
 
-import java.awt.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -15,16 +13,16 @@ public class MMModel {
     }
 
     private Marble[][] mPlayfield;
-    private int mWidth;
     private int mHeight;
+    private int mWidth;
 
     private MMModel() {
     }
 
     public Marble[][] createPlayfieldArray(int width, int height){
         mPlayfield = new Marble[width][height];
-        mWidth = width;
-        mHeight = height;
+        mHeight = width;
+        mWidth = height;
         return mPlayfield;
     }
 
@@ -50,14 +48,17 @@ public class MMModel {
 
     public void rearrangeMarbles(){
 
-        for (int i = 0; i < mHeight; i++){
-            for (int j = 0; j < mWidth; j++){
+        System.out.println("width: " + mHeight + " height: " + mWidth);
+
+        for (int i = 0; i < mWidth; i++){
+            for (int j = 0; j < mHeight; j++){
                 dropMarblesToBotton(i);
             }
         }
 
-        for (int i = mHeight - 1; i > 0; i--){
-            for (int j = 0; j < mHeight; j++){
+
+        for (int j = 0; j < mWidth; j++){
+            for (int i = mWidth - 1; i > 0; i--){
                 moveMarblesToRight(i);
             }
         }
@@ -66,7 +67,7 @@ public class MMModel {
 
     private void dropMarblesToBotton(int column){
 
-        for (int i = mWidth - 1; i > 0; i--){
+        for (int i = mHeight - 1; i > 0; i--){
             Marble tempMarble = mPlayfield[i][column];
 
             if (!tempMarble.isVisible()){
@@ -77,9 +78,9 @@ public class MMModel {
     }
 
     private void moveMarblesToRight(int column){
-        if (!mPlayfield[mWidth-1][column].isVisible()){
+        if (!mPlayfield[mHeight -1][column].isVisible()){
             //move whole column to right
-            for (int i = 0; i < mWidth; i++){
+            for (int i = mHeight - 1; i >= 0; i--){
                 Marble tempMarble = mPlayfield[i][column];
                 mPlayfield[i][column] = mPlayfield[i][column-1];
                 mPlayfield[i][column-1] = tempMarble;
